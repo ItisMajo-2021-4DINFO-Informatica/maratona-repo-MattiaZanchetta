@@ -31,12 +31,15 @@ namespace ZanchettaMaratonaApp
 
         private void btnVisualizza_Click(object sender, RoutedEventArgs e)
         {
-            /*
-            using (FileStream flow = new FileStream("risultati.txt", FileMode.Open, FileAcces.Read))
+            using(FileStream flow = new FileStream("risultati.txt", FileMode.Open, FileAccess.Read))
             {
+                StreamReader reader = new StreamReader(flow);
 
+                while(!reader.EndOfStream)
+                {
+
+                }
             }
-            */
         }
     }
 }

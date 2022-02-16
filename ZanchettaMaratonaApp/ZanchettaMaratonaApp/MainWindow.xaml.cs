@@ -37,7 +37,8 @@ namespace ZanchettaMaratonaApp
 
                 while(!reader.EndOfStream)
                 {
-
+                    string linea = reader.ReadLine();
+                    string[] categorie = linea.Split("%");
                 }
             }
         }

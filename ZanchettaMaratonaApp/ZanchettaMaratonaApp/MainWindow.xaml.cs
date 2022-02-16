@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace ZanchettaMaratonaApp
 {
@@ -20,9 +21,22 @@ namespace ZanchettaMaratonaApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        ClassRisultati objRisultati;
         public MainWindow()
         {
             InitializeComponent();
+            objRisultati = new ClassRisultati();
+            dataGridContenuto.ItemsSource = objRisultati.ListaRisultati;
+        }
+
+        private void btnVisualizza_Click(object sender, RoutedEventArgs e)
+        {
+            /*
+            using (FileStream flow = new FileStream("risultati.txt", FileMode.Open, FileAcces.Read))
+            {
+
+            }
+            */
         }
     }
 }

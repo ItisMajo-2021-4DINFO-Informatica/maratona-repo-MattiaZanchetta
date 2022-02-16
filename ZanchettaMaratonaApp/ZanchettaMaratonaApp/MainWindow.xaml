@@ -8,6 +8,6 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <DataGrid x:Name="dataGridContenuto" Margin="10,10,10,139"/>
-        <Button x:Name="btnVisualizza" Content="Visualizza" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="31" Width="78"/>
+        <Button x:Name="btnVisualizza" Content="Visualizza" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="31" Width="78" Click="btnVisualizza_Click"/>
     </Grid>
 </Window>

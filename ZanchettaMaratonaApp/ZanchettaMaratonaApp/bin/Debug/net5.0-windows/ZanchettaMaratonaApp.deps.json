@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ZanchettaMaratonaApp/1.0.0": {
+        "runtime": {
+          "ZanchettaMaratonaApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZanchettaMaratonaApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

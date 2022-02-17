@@ -70,5 +70,15 @@ namespace ZanchettaMaratonaApp
                 }
             }
         }
+
+        private void btnVisualizzaAtleti_Click(object sender, RoutedEventArgs e)
+        {
+            string inpText = txtNomeCitta.Text.ToLower();
+            string listaAtleti = objRisultati.CercaAtleti(inpText);
+
+            lblListaAtleti.Content = $"Gli atleti sono: {listaAtleti}";
+
+
+        }
     }
 }

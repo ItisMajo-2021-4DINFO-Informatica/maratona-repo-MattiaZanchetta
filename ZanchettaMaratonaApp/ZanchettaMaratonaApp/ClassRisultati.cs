@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace ZanchettaMaratonaApp
 {
@@ -31,6 +32,26 @@ namespace ZanchettaMaratonaApp
             int finaleTempInt = Int16.Parse(temp1) * 60 + Int16.Parse(temp2);
             string finaleTemp = finaleTempInt.ToString();
             return finaleTemp;
+        }
+
+        public string CercaAtleti(string inpCitta)
+        {
+            var lista2 = new List<string>();
+            string listaAtleti = "";
+
+            foreach (var citta in this.ListaRisultati)
+            {
+                if (inpCitta == citta.CittaMaratona.ToLower())
+                {
+                    lista2.Add(citta.NomeAtleta);
+                }
+            }
+
+            foreach (string atleti in lista2)
+            {
+                listaAtleti += $"{atleti}, ";
+            }
+            return listaAtleti;
         }
     }
     }

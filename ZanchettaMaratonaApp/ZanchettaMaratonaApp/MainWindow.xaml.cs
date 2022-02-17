@@ -39,6 +39,34 @@ namespace ZanchettaMaratonaApp
                 {
                     string linea = reader.ReadLine();
                     string[] categorie = linea.Split("%");
+
+                    var objRisultato = new ClassRisultato();
+                    objRisultato.NomeAtleta = categorie[0];
+                    objRisultato.Company = categorie[1];
+                    objRisultato.Tempo = categorie[2];
+                    objRisultato.CittaMaratona = categorie[3];
+
+                    objRisultati.AggiungiLinea(objRisultato);
+                }
+                dataGridContenuto.Items.Refresh();
+            }
+        }
+
+        private void btnVisualizzaTempo_Click(object sender, RoutedEventArgs e)
+        {
+            string finaleTemp;
+            foreach(var risultati in objRisultati.ListaRisultati)
+            {
+                if(txtNomeAtleta.Text.ToLower() == risultati.NomeAtleta.ToLower() && txtCittaAtleta.Text.ToLower() == risultati.CittaMaratona.ToLower())
+                {
+                    finaleTemp = objRisultati.TrasformaTempo(risultati);
+
+                    lblTempoAtleta.Content = $"Il tempo dell'atleta è: {finaleTemp} min.";
+                    break;
+                }
+                else
+                {
+                    lblTempoAtleta.Content = $"non è stato possibile calcolare il tempo";
                 }
             }
         }

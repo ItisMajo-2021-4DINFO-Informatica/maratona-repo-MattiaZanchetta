@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZanchettaMaratonaApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="553" Width="901">
     <Grid>
-        <DataGrid x:Name="dataGridContenuto" Margin="10,10,10,139"/>
-        <Button x:Name="btnVisualizza" Content="Visualizza" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="31" Width="78" Click="btnVisualizza_Click"/>
+        <DataGrid x:Name="dataGridContenuto" Margin="10,10,10,210"/>
+        <Button x:Name="btnVisualizza" Content="Visualizza" HorizontalAlignment="Center" Margin="0,332,0,0" VerticalAlignment="Top" Height="31" Width="78" Click="btnVisualizza_Click"/>
+        <Label Content="Inserisci nome atleta:" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Width="151"/>
+        <Label Content="Inserisci città atleta:&#xD;&#xA;" HorizontalAlignment="Left" Margin="140,368,0,0" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="txtNomeAtleta" HorizontalAlignment="Left" Margin="15,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.784"/>
+        <TextBox x:Name="txtCittaAtleta" HorizontalAlignment="Left" Margin="140,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnVisualizzaTempo" Content="Visualizza tempo atleta" HorizontalAlignment="Left" Margin="265,399,0,0" VerticalAlignment="Top" Height="18" Width="159" Click="btnVisualizzaTempo_Click"/>
+        <Label x:Name="lblTempoAtleta" Content="" HorizontalAlignment="Left" Margin="429,396,0,0" VerticalAlignment="Top" Width="462"/>
     </Grid>
 </Window>

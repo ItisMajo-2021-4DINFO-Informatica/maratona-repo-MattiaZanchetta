@@ -8,25 +8,23 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Utente\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utente\\Desktop\\GitHub\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp.csproj",
+      "projectUniqueName": "D:\\Mattia\\Scuola\\Info\\Progetti\\ProgettoPasswordScuola\\maratona-repo-MattiaZanchetta\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp.csproj",
       "projectName": "ZanchettaMaratonaApp",
-      "projectPath": "C:\\Users\\Utente\\Desktop\\GitHub\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp.csproj",
-      "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utente\\Desktop\\GitHub\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp\\obj\\",
+      "projectPath": "D:\\Mattia\\Scuola\\Info\\Progetti\\ProgettoPasswordScuola\\maratona-repo-MattiaZanchetta\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "D:\\Mattia\\Scuola\\Info\\Progetti\\ProgettoPasswordScuola\\maratona-repo-MattiaZanchetta\\ZanchettaMaratonaApp\\ZanchettaMaratonaApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Utente\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -70,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

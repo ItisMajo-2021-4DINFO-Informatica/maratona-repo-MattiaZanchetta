@@ -53,5 +53,29 @@ namespace ZanchettaMaratonaApp
             }
             return listaAtleti;
         }
+
+        public void InserisciElementi(string nome, string società, string tempo, string città)
+        {
+            bool controllo = false;
+
+            foreach(var atleta in ListaRisultati)
+            {
+                if(nome == atleta.NomeAtleta && città == atleta.CittaMaratona)
+                {
+                    controllo = true;
+                }
+            }
+
+            if(controllo == false)
+            {
+                var risultato = new ClassRisultato();
+                risultato.NomeAtleta = nome;
+                risultato.Company = società;
+                risultato.CittaMaratona = città;
+                risultato.Tempo = tempo;
+
+                AggiungiLinea(risultato);
+            }
+        }
     }
-    }
+}

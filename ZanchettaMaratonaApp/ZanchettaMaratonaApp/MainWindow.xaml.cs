@@ -80,5 +80,17 @@ namespace ZanchettaMaratonaApp
 
 
         }
+
+        private void btnSovrascrivi_Click(object sender, RoutedEventArgs e)
+        {
+            string nomeAtleta = txtNome.Text;
+            string nomeSocietà = txtNomeCompany.Text;
+            string tempoGara = txtNomeTempo.Text;
+            string nomeCittà = txtLuogo.Text;
+
+            objRisultati.InserisciElementi(nomeAtleta, nomeSocietà, tempoGara, nomeCittà);
+
+            dataGridContenuto.Items.Refresh();
+        }
     }
 }

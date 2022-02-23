@@ -1,0 +1,31 @@
+﻿<Window x:Class="ZanchettaMaratonaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZanchettaMaratonaApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="553" Width="901">
+    <Grid>
+        <DataGrid x:Name="dataGridContenuto" Margin="10,10,10,210"/>
+        <Button x:Name="btnVisualizza" Content="Visualizza" HorizontalAlignment="Left" Margin="451,337,0,0" VerticalAlignment="Top" Height="31" Width="77" Click="btnVisualizza_Click"/>
+        <Label Content="Inserisci nome atleta:" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Width="151"/>
+        <Label Content="Inserisci città atleta:&#xD;&#xA;" HorizontalAlignment="Left" Margin="140,368,0,0" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="txtNomeAtleta" HorizontalAlignment="Left" Margin="15,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.784"/>
+        <TextBox x:Name="txtCittaAtleta" HorizontalAlignment="Left" Margin="140,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnVisualizzaTempo" Content="Visualizza tempo atleta" HorizontalAlignment="Left" Margin="265,399,0,0" VerticalAlignment="Top" Height="18" Width="159" Click="btnVisualizzaTempo_Click"/>
+        <Label x:Name="lblTempoAtleta" HorizontalAlignment="Left" Margin="429,396,0,0" VerticalAlignment="Top" Width="462"/>
+        <Label Content="Inserisci città:" HorizontalAlignment="Center" Margin="0,478,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNomeCitta" HorizontalAlignment="Left" Margin="15,453,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.784"/>
+        <Button x:Name="btnVisualizzaAtleti" Content="Visualizza atleti" HorizontalAlignment="Left" Margin="140,453,0,0" VerticalAlignment="Top" Height="18" Width="159" Click="btnVisualizzaAtleti_Click"/>
+        <Label x:Name="lblListaAtleti" Content="" HorizontalAlignment="Left" Margin="304,450,0,0" VerticalAlignment="Top" Width="462"/>
+        <Button x:Name="btnSovrascrivi" Content="Salva" HorizontalAlignment="Left" VerticalAlignment="Top" Height="18" Width="78" Click="btnSovrascrivi_Click" Margin="516,509,0,0" RenderTransformOrigin="3.044,3.786"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="15,509,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.784"/>
+        <TextBox x:Name="txtNomeCompany" HorizontalAlignment="Left" Margin="140,509,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.784"/>
+        <TextBox x:Name="txtNomeTempo" HorizontalAlignment="Left" Margin="265,509,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.784"/>
+        <TextBox x:Name="txtLuogo" HorizontalAlignment="Center" Margin="0,509,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.784"/>
+        <Label Content="Inserisci nome atleta:" HorizontalAlignment="Left" Margin="10,478,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Inserisci la società:" HorizontalAlignment="Left" Margin="140,478,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Inserisci il tempo:" HorizontalAlignment="Left" Margin="265,478,0,0" VerticalAlignment="Top" Width="125"/>
+    </Grid>
+</Window>
